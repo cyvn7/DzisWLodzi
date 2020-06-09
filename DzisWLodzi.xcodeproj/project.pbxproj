@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54128F6631F3D36AC185F579 /* Pods_DzisWLodzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1502E360B54CB368FBC75A /* Pods_DzisWLodzi.framework */; };
+		875B3FD1247BE1040050C70E /* MapObjDesc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B3FD0247BE1040050C70E /* MapObjDesc.swift */; };
+		877613DA23B7A972003FA847 /* MapCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877613D923B7A972003FA847 /* MapCategoryView.swift */; };
+		877BA4CE236CBB7900725144 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BA4CD236CBB7900725144 /* AppDelegate.swift */; };
+		877BA4D0236CBB7900725144 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BA4CF236CBB7900725144 /* SceneDelegate.swift */; };
+		877BA4D2236CBB7900725144 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BA4D1236CBB7900725144 /* MapView.swift */; };
+		877BA4D5236CBB7900725144 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877BA4D3236CBB7900725144 /* Main.storyboard */; };
+		877BA4D8236CBB7900725144 /* DzisWLodzi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 877BA4D6236CBB7900725144 /* DzisWLodzi.xcdatamodeld */; };
+		877BA4DA236CBB8300725144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 877BA4D9236CBB8300725144 /* Assets.xcassets */; };
+		877BA4DD236CBB8300725144 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877BA4DB236CBB8300725144 /* LaunchScreen.storyboard */; };
+		879E2D73247BDAB000106C2F /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 879E2D6F247BDAB000106C2F /* Raleway-SemiBold.ttf */; };
+		879E2D74247BDAB000106C2F /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 879E2D70247BDAB000106C2F /* Lato-Bold.ttf */; };
+		879E2D75247BDAB000106C2F /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 879E2D71247BDAB000106C2F /* Lato-Semibold.ttf */; };
+		879E2D76247BDAB000106C2F /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 879E2D72247BDAB000106C2F /* Raleway-Regular.ttf */; };
+		87A0A8F023BE5228000355A0 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A0A8EF23BE5228000355A0 /* EventCell.xib */; };
+		87A0A93423BEA3C3000355A0 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A0A93323BEA3C3000355A0 /* EventsView.swift */; };
+		87A0A93623BEA559000355A0 /* EventCellClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A0A93523BEA559000355A0 /* EventCellClass.swift */; };
+		87A0A93823BEAF99000355A0 /* JSONClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A0A93723BEAF99000355A0 /* JSONClass.swift */; };
+		87A0A93E23C392F3000355A0 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A0A93D23C392F3000355A0 /* CategoryCell.xib */; };
+		87A0A94023C39BA1000355A0 /* EventsCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A0A93F23C39BA1000355A0 /* EventsCategoryView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5EEBC063717049EA2FCC5A0E /* Pods-DzisWLodzi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DzisWLodzi.debug.xcconfig"; path = "Target Support Files/Pods-DzisWLodzi/Pods-DzisWLodzi.debug.xcconfig"; sourceTree = "<group>"; };
+		5F1502E360B54CB368FBC75A /* Pods_DzisWLodzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DzisWLodzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		875B3FD0247BE1040050C70E /* MapObjDesc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapObjDesc.swift; sourceTree = "<group>"; };
+		877613D923B7A972003FA847 /* MapCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCategoryView.swift; sourceTree = "<group>"; };
+		877BA4CA236CBB7900725144 /* Dziś w Łodzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dziś w Łodzi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		877BA4CD236CBB7900725144 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		877BA4CF236CBB7900725144 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		877BA4D1236CBB7900725144 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		877BA4D4236CBB7900725144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		877BA4D7236CBB7900725144 /* DzisWLodzi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DzisWLodzi.xcdatamodel; sourceTree = "<group>"; };
+		877BA4D9236CBB8300725144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		877BA4DC236CBB8300725144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		877BA4DE236CBB8300725144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		879E2D6F247BDAB000106C2F /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		879E2D70247BDAB000106C2F /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		879E2D71247BDAB000106C2F /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		879E2D72247BDAB000106C2F /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		87A0A8EF23BE5228000355A0 /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
+		87A0A93323BEA3C3000355A0 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		87A0A93523BEA559000355A0 /* EventCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellClass.swift; sourceTree = "<group>"; };
+		87A0A93723BEAF99000355A0 /* JSONClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONClass.swift; sourceTree = "<group>"; };
+		87A0A93923C26042000355A0 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87A0A93D23C392F3000355A0 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		87A0A93F23C39BA1000355A0 /* EventsCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCategoryView.swift; sourceTree = "<group>"; };
+		FA55FF08263F9545D3CD9F7A /* Pods-DzisWLodzi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DzisWLodzi.release.xcconfig"; path = "Target Support Files/Pods-DzisWLodzi/Pods-DzisWLodzi.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		877BA4C7236CBB7900725144 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54128F6631F3D36AC185F579 /* Pods_DzisWLodzi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AF6EEB241A7B45799B8A168 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87A0A93923C26042000355A0 /* Kingfisher.framework */,
+				5F1502E360B54CB368FBC75A /* Pods_DzisWLodzi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A2E39D2F848DB28E2E123CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EEBC063717049EA2FCC5A0E /* Pods-DzisWLodzi.debug.xcconfig */,
+				FA55FF08263F9545D3CD9F7A /* Pods-DzisWLodzi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		877613D823B6D025003FA847 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				879E2D70247BDAB000106C2F /* Lato-Bold.ttf */,
+				879E2D71247BDAB000106C2F /* Lato-Semibold.ttf */,
+				879E2D72247BDAB000106C2F /* Raleway-Regular.ttf */,
+				879E2D6F247BDAB000106C2F /* Raleway-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		877BA4C1236CBB7900725144 = {
+			isa = PBXGroup;
+			children = (
+				877BA4CC236CBB7900725144 /* DzisWLodzi */,
+				877BA4CB236CBB7900725144 /* Products */,
+				7A2E39D2F848DB28E2E123CD /* Pods */,
+				3AF6EEB241A7B45799B8A168 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		877BA4CB236CBB7900725144 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				877BA4CA236CBB7900725144 /* Dziś w Łodzi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		877BA4CC236CBB7900725144 /* DzisWLodzi */ = {
+			isa = PBXGroup;
+			children = (
+				877613D823B6D025003FA847 /* Fonts */,
+				87A0A8ED23BE51B8000355A0 /* View Classes */,
+				87A0A8EB23BE5179000355A0 /* Design files */,
+				877BA4D9236CBB8300725144 /* Assets.xcassets */,
+				87A0A8EE23BE51F2000355A0 /* Other files */,
+				87A0A8EC23BE51AC000355A0 /* Irrelevant */,
+			);
+			path = DzisWLodzi;
+			sourceTree = "<group>";
+		};
+		87A0A8EB23BE5179000355A0 /* Design files */ = {
+			isa = PBXGroup;
+			children = (
+				877BA4DB236CBB8300725144 /* LaunchScreen.storyboard */,
+				877BA4D3236CBB7900725144 /* Main.storyboard */,
+				87A0A93D23C392F3000355A0 /* CategoryCell.xib */,
+				87A0A8EF23BE5228000355A0 /* EventCell.xib */,
+			);
+			path = "Design files";
+			sourceTree = "<group>";
+		};
+		87A0A8EC23BE51AC000355A0 /* Irrelevant */ = {
+			isa = PBXGroup;
+			children = (
+				877BA4CD236CBB7900725144 /* AppDelegate.swift */,
+				877BA4CF236CBB7900725144 /* SceneDelegate.swift */,
+			);
+			path = Irrelevant;
+			sourceTree = "<group>";
+		};
+		87A0A8ED23BE51B8000355A0 /* View Classes */ = {
+			isa = PBXGroup;
+			children = (
+				877BA4D1236CBB7900725144 /* MapView.swift */,
+				87A0A93723BEAF99000355A0 /* JSONClass.swift */,
+				877613D923B7A972003FA847 /* MapCategoryView.swift */,
+				87A0A93F23C39BA1000355A0 /* EventsCategoryView.swift */,
+				87A0A93323BEA3C3000355A0 /* EventsView.swift */,
+				87A0A93523BEA559000355A0 /* EventCellClass.swift */,
+				875B3FD0247BE1040050C70E /* MapObjDesc.swift */,
+			);
+			path = "View Classes";
+			sourceTree = "<group>";
+		};
+		87A0A8EE23BE51F2000355A0 /* Other files */ = {
+			isa = PBXGroup;
+			children = (
+				877BA4DE236CBB8300725144 /* Info.plist */,
+				877BA4D6236CBB7900725144 /* DzisWLodzi.xcdatamodeld */,
+			);
+			path = "Other files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		877BA4C9236CBB7900725144 /* DzisWLodzi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 877BA4E1236CBB8300725144 /* Build configuration list for PBXNativeTarget "DzisWLodzi" */;
+			buildPhases = (
+				EDA9B9C5A5C649D5F9E5F3CA /* [CP] Check Pods Manifest.lock */,
+				877BA4C6236CBB7900725144 /* Sources */,
+				877BA4C7236CBB7900725144 /* Frameworks */,
+				877BA4C8236CBB7900725144 /* Resources */,
+				34346F8D5938B9A0F21ADE2C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DzisWLodzi;
+			productName = DzisWLodzi;
+			productReference = 877BA4CA236CBB7900725144 /* Dziś w Łodzi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		877BA4C2236CBB7900725144 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Maciej Przybylski";
+				TargetAttributes = {
+					877BA4C9236CBB7900725144 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 877BA4C5236CBB7900725144 /* Build configuration list for PBXProject "DzisWLodzi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 877BA4C1236CBB7900725144;
+			productRefGroup = 877BA4CB236CBB7900725144 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				877BA4C9236CBB7900725144 /* DzisWLodzi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		877BA4C8236CBB7900725144 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877BA4DD236CBB8300725144 /* LaunchScreen.storyboard in Resources */,
+				879E2D76247BDAB000106C2F /* Raleway-Regular.ttf in Resources */,
+				877BA4DA236CBB8300725144 /* Assets.xcassets in Resources */,
+				879E2D75247BDAB000106C2F /* Lato-Semibold.ttf in Resources */,
+				877BA4D5236CBB7900725144 /* Main.storyboard in Resources */,
+				87A0A93E23C392F3000355A0 /* CategoryCell.xib in Resources */,
+				87A0A8F023BE5228000355A0 /* EventCell.xib in Resources */,
+				879E2D73247BDAB000106C2F /* Raleway-SemiBold.ttf in Resources */,
+				879E2D74247BDAB000106C2F /* Lato-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34346F8D5938B9A0F21ADE2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DzisWLodzi/Pods-DzisWLodzi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DzisWLodzi/Pods-DzisWLodzi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DzisWLodzi/Pods-DzisWLodzi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDA9B9C5A5C649D5F9E5F3CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DzisWLodzi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		877BA4C6236CBB7900725144 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877BA4D2236CBB7900725144 /* MapView.swift in Sources */,
+				875B3FD1247BE1040050C70E /* MapObjDesc.swift in Sources */,
+				877BA4CE236CBB7900725144 /* AppDelegate.swift in Sources */,
+				87A0A93823BEAF99000355A0 /* JSONClass.swift in Sources */,
+				87A0A93623BEA559000355A0 /* EventCellClass.swift in Sources */,
+				877BA4D8236CBB7900725144 /* DzisWLodzi.xcdatamodeld in Sources */,
+				877BA4D0236CBB7900725144 /* SceneDelegate.swift in Sources */,
+				877613DA23B7A972003FA847 /* MapCategoryView.swift in Sources */,
+				87A0A93423BEA3C3000355A0 /* EventsView.swift in Sources */,
+				87A0A94023C39BA1000355A0 /* EventsCategoryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		877BA4D3236CBB7900725144 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				877BA4D4236CBB7900725144 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		877BA4DB236CBB8300725144 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				877BA4DC236CBB8300725144 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		877BA4DF236CBB8300725144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		877BA4E0236CBB8300725144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		877BA4E2236CBB8300725144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EEBC063717049EA2FCC5A0E /* Pods-DzisWLodzi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3DP3677P6;
+				INFOPLIST_FILE = "DzisWLodzi/Other Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyan.DzisWLodzi;
+				PRODUCT_NAME = "Dziś w Łodzi";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		877BA4E3236CBB8300725144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA55FF08263F9545D3CD9F7A /* Pods-DzisWLodzi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3DP3677P6;
+				INFOPLIST_FILE = "DzisWLodzi/Other Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyan.DzisWLodzi;
+				PRODUCT_NAME = "Dziś w Łodzi";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		877BA4C5236CBB7900725144 /* Build configuration list for PBXProject "DzisWLodzi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				877BA4DF236CBB8300725144 /* Debug */,
+				877BA4E0236CBB8300725144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		877BA4E1236CBB8300725144 /* Build configuration list for PBXNativeTarget "DzisWLodzi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				877BA4E2236CBB8300725144 /* Debug */,
+				877BA4E3236CBB8300725144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		877BA4D6236CBB7900725144 /* DzisWLodzi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				877BA4D7236CBB7900725144 /* DzisWLodzi.xcdatamodel */,
+			);
+			currentVersion = 877BA4D7236CBB7900725144 /* DzisWLodzi.xcdatamodel */;
+			path = DzisWLodzi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 877BA4C2236CBB7900725144 /* Project object */;
+}

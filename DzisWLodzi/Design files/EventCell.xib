@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventCell" rowHeight="209" id="3mP-gB-Jgd" customClass="EventCellClass" customModule="Dziś_w_Łodzi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="209"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3mP-gB-Jgd" id="ecs-X0-fkW">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="209"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="96b-p7-mmI" userLabel="Bkg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="209"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="209" id="QLe-rL-MXK"/>
+                            <constraint firstAttribute="width" constant="414" id="hCt-pE-q4o"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadow" id="vlz-ax-K6N" userLabel="Shadow2">
+                        <rect key="frame" x="0.0" y="-13" width="414" height="0.0"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.25" height="1"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadow" translatesAutoresizingMaskIntoConstraints="NO" id="tmZ-x6-Sop" userLabel="Shadow">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="209"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="414" id="DxC-96-pfp"/>
+                            <constraint firstAttribute="height" constant="209" id="Uui-na-zpo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thN-Hl-Z8b" userLabel="Title">
+                        <rect key="frame" x="12" y="166.5" width="390" height="31.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="390" id="l2K-RJ-Jwz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="27"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCM-Bq-qPS" userLabel="Date">
+                        <rect key="frame" x="12" y="145" width="390" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="390" id="bDn-Tx-x0I"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tmZ-x6-Sop" firstAttribute="leading" secondItem="ecs-X0-fkW" secondAttribute="leading" id="151-1e-qwb"/>
+                    <constraint firstItem="96b-p7-mmI" firstAttribute="top" secondItem="ecs-X0-fkW" secondAttribute="top" id="3sL-rU-8qR"/>
+                    <constraint firstItem="96b-p7-mmI" firstAttribute="leading" secondItem="ecs-X0-fkW" secondAttribute="leading" id="5te-VJ-svn"/>
+                    <constraint firstAttribute="trailing" secondItem="thN-Hl-Z8b" secondAttribute="trailing" constant="12" id="7hK-0c-hEX"/>
+                    <constraint firstItem="thN-Hl-Z8b" firstAttribute="top" secondItem="SCM-Bq-qPS" secondAttribute="bottom" constant="1.5" id="Gsg-6b-AuZ"/>
+                    <constraint firstAttribute="bottom" secondItem="tmZ-x6-Sop" secondAttribute="bottom" id="KFL-Cu-VJk"/>
+                    <constraint firstItem="SCM-Bq-qPS" firstAttribute="leading" secondItem="ecs-X0-fkW" secondAttribute="leading" constant="12" id="MJS-rE-Bta"/>
+                    <constraint firstItem="thN-Hl-Z8b" firstAttribute="leading" secondItem="ecs-X0-fkW" secondAttribute="leading" constant="12" id="Sr7-Lc-mdS"/>
+                    <constraint firstAttribute="bottom" secondItem="96b-p7-mmI" secondAttribute="bottom" id="VQA-ma-0SF"/>
+                    <constraint firstAttribute="trailing" secondItem="SCM-Bq-qPS" secondAttribute="trailing" constant="12" id="m7h-lh-GP2"/>
+                    <constraint firstAttribute="trailing" secondItem="96b-p7-mmI" secondAttribute="trailing" id="nce-gb-cGQ"/>
+                    <constraint firstAttribute="bottom" secondItem="thN-Hl-Z8b" secondAttribute="bottom" constant="11" id="qpv-ki-Wky"/>
+                    <constraint firstItem="tmZ-x6-Sop" firstAttribute="top" secondItem="ecs-X0-fkW" secondAttribute="top" id="t50-Tt-h2H"/>
+                    <constraint firstAttribute="trailing" secondItem="tmZ-x6-Sop" secondAttribute="trailing" id="uDY-m7-br2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bkgView" destination="96b-p7-mmI" id="DlO-wp-ApN"/>
+                <outlet property="dateOfEventLabel" destination="SCM-Bq-qPS" id="Xm5-0m-ziR"/>
+                <outlet property="eventTitleLabel" destination="thN-Hl-Z8b" id="Uej-YG-IVQ"/>
+            </connections>
+            <point key="canvasLocation" x="286.95652173913044" y="122.87946428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="640" height="640"/>
+        <image name="shadow" width="600" height="200"/>
+    </resources>
+</document>
