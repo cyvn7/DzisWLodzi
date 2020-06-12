@@ -28,12 +28,13 @@ class EventsView: UITableViewController, UINavigationControllerDelegate {
     
             
     override func viewDidAppear(_ animated: Bool) {
-        spinner = JHSpinnerView.showOnView(view, spinnerColor:UIColor(rgb: 0xF9AF20), overlay:.roundedSquare, overlayColor:UIColor.black.withAlphaComponent(0.6))
-        view.addSubview(spinner)
+        //
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.spinner = JHSpinnerView.showOnView(self.view, spinnerColor:UIColor(rgb: 0xF9AF20), overlay:.roundedSquare, overlayColor:UIColor.black.withAlphaComponent(0.6))
+        self.view.addSubview(self.spinner)
         
         navigationController?.delegate = self
         
@@ -42,13 +43,14 @@ class EventsView: UITableViewController, UINavigationControllerDelegate {
         cache.memoryStorage.config.expiration = .seconds(600)
         cache.memoryStorage.config.totalCostLimit = 1
         tableView.register(UINib(nibName: "EventCell", bundle: nil) , forCellReuseIdentifier: "eventCell")
-        JSONClass.getJSON(linkArray: ["/event/event/json"], completion: {jsonFile,alert in
+        JSONClass.getJSON(linkArray: ["/event/event/json?dateStart=\(NSDate().timeIntervalSince1970)"], completion: {jsonFile,alert in
                 if jsonFile != [JSON]() {
+                    
                     self.eventsJSON = jsonFile[0]
                     //print("teajhbkjbjbjjgcvblj;lbhvjgh\(self.eventsJSON)")
                     self.deleteLateEvents()
-                    self.spinner.dismiss()
                     self.tableView.reloadData()
+                    self.spinner.dismiss()
                     print("done")
                     //print(self.eventsJSON)
                 }
@@ -63,9 +65,8 @@ class EventsView: UITableViewController, UINavigationControllerDelegate {
     
     
     func deleteLateEvents() {
-        let currentDate = Int(NSDate().timeIntervalSince1970)
             for (index,subJson):(String, JSON) in eventsJSON.reversed() {
-                if subJson["date_start"].intValue <= currentDate { //|| subJson["category_id"].intValue != category_id{
+                if subJson["category_id"].intValue != category_id {
                     eventsJSON.arrayObject?.remove(at: Int(index)!)
                     if category_id == 3 {
                         print("koncert")
@@ -84,7 +85,8 @@ class EventsView: UITableViewController, UINavigationControllerDelegate {
 
         // create a new cell if needed or reuse an old one
         let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath) as! EventCellClass
-        let cacheURL = eventsJSON[indexPath.row]["img"].stringValue
+        let cacheURL = eventsJSON[indexPath.row]["img"].stringValue.replacingOccurrences(of: "http://", with: "https://")
+        print(eventsJSON[indexPath.row]["img"].stringValue)
         cell.bkgView.image = UIImage(named: "placeholder")
         cell.eventTitleLabel.text! = eventsJSON[indexPath.row]["title"].stringValue
         

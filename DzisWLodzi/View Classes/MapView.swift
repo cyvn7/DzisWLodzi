@@ -106,7 +106,8 @@ class MapViewClass: UIViewController, CLLocationManagerDelegate, MKMapViewDelega
         curID = identifier!
         print(jsonDict[identifier!]!.categoryIds)
         detailTitle.text! = jsonDict[identifier!]!.title
-        AF.download("\(dwlURL)\(jsonDict[identifier!]!.imageLink)").responseData {
+        print(jsonDict[identifier!]!.imageLink)
+        AF.download("\(jsonDict[identifier!]!.imageLink.replacingOccurrences(of: "http", with: "https"))").responseData {
           response in
               if let data = response.value {
                    let image = UIImage(data: data)
@@ -118,6 +119,12 @@ class MapViewClass: UIViewController, CLLocationManagerDelegate, MKMapViewDelega
                 completion: nil)
                }
         }
+        let size = CGSize(width: 75, height: 75)
+        UIGraphicsBeginImageContext(size)
+        view.image!.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
+
+        view.image = resizedImage
         detailView.isHidden = false
         centerDotView(lat: jsonDict[identifier!]!.lat, long: jsonDict[identifier!]!.long)
     }
@@ -125,6 +132,12 @@ class MapViewClass: UIViewController, CLLocationManagerDelegate, MKMapViewDelega
     func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
         detailView.isHidden = true
         curID = Int()
+        let size = CGSize(width: 50, height: 50)
+        UIGraphicsBeginImageContext(size)
+        view.image!.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
+
+        view.image = resizedImage
     }
 
     
