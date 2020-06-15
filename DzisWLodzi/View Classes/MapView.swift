@@ -33,8 +33,9 @@ class MapViewClass: UIViewController, CLLocationManagerDelegate, MKMapViewDelega
     var selectedCategoriesIDs = [Int]()
     var jsonDict = [Int: annonationValue]()
     var ind = 0
+    var image = UIImage(data: Data())
     
-    typealias annonationValue = (lat: Double, long: Double , imageLink: String, title: String, categoryIds : [Int], website : String)
+    typealias annonationValue = (lat: Double, long: Double , imageLink: String, title: String, categoryIds : [Int], website : String, address : String, tel : String, prices : String, hours : String, desc : String)
 
     //MARK: Funkcje mapy
     
@@ -110,12 +111,12 @@ class MapViewClass: UIViewController, CLLocationManagerDelegate, MKMapViewDelega
         AF.download("\(jsonDict[identifier!]!.imageLink.replacingOccurrences(of: "http", with: "https"))").responseData {
           response in
               if let data = response.value {
-                   let image = UIImage(data: data)
+                self.image = UIImage(data: data)
                 //self.detailBkg.image = image
                 UIView.transition(with: self.detailBkg,
                 duration: 0.75,
                 options: .transitionCrossDissolve,
-                animations: { self.detailBkg.image = image },
+                animations: { self.detailBkg.image = self.image },
                 completion: nil)
                }
         }
@@ -134,7 +135,7 @@ class MapViewClass: UIViewController, CLLocationManagerDelegate, MKMapViewDelega
         curID = Int()
         let size = CGSize(width: 50, height: 50)
         UIGraphicsBeginImageContext(size)
-        view.image!.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        view.image?.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
 
         view.image = resizedImage
@@ -250,8 +251,18 @@ class MapViewClass: UIViewController, CLLocationManagerDelegate, MKMapViewDelega
             for (index,subJson):(String, JSON) in attractionsJSON {
                     let indexcx = Int(index)!
                     //annotation.id = Int(index)!
-                jsonDict[indexcx] = annonationValue(lat: subJson["geo_latitude"].doubleValue, long: subJson["geo_longitude"].doubleValue, imageLink: subJson["img"].stringValue, title: subJson["title"].stringValue, categoryIds: subJson["additional_categories"].arrayValue.map { $0.intValue}, website: subJson["url"].stringValue)
-    //            jsonDict[indexcx] = annonationValue(lat: attractionsJSON[indexcx]["geo_latitude"].doubleValue, long: attractionsJSON[indexcx]["geo_longitude"].doubleValue, imageLink: attractionsJSON[indexcx]["img"].stringValue, title: attractionsJSON[indexcx]["title"].stringValue, categoryIds: attractionsJSON[indexcx]["additional_categories"].arrayValue.map { $0.stringValue})
+                jsonDict[indexcx] = annonationValue(
+                    lat: subJson["geo_latitude"].doubleValue,
+                    long: subJson["geo_longitude"].doubleValue,
+                    imageLink: subJson["img"].stringValue,
+                    title: subJson["title"].stringValue,
+                    categoryIds: subJson["additional_categories"].arrayValue.map { $0.intValue},
+                    website: subJson["company_www"].stringValue,
+                    address : "\(subJson["company_address"]), \(subJson["company_city"]), \(subJson["company_zip"])",
+                    tel : subJson["company_phone"].stringValue,
+                    prices : subJson["prices_details"].stringValue,
+                    hours : subJson["hours"].stringValue,
+                    desc : subJson["description"].stringValue)
                 let annotation = LodzPin(id: indexcx, lat: jsonDict[indexcx]!.lat, long: jsonDict[indexcx]!.long)
                 for catid in jsonDict[indexcx]!.categoryIds {
                     if (selectedCategories != [Int]() && selectedCategories.contains(catid)) || selectedCategories == [Int]() {
@@ -355,6 +366,10 @@ class MapViewClass: UIViewController, CLLocationManagerDelegate, MKMapViewDelega
                 
             }
             
+        } else if segue.identifier == "toDetails" {
+            let fvc = segue.destination as! MapObjDesc
+            fvc.objectDetail = jsonDict[curID]!
+            fvc.image = image
         }
         
         //print(categoriesJSON)

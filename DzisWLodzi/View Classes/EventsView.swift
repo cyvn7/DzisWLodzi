@@ -35,7 +35,7 @@ class EventsView: UITableViewController, UINavigationControllerDelegate {
         super.viewDidLoad()
         self.spinner = JHSpinnerView.showOnView(self.view, spinnerColor:UIColor(rgb: 0xF9AF20), overlay:.roundedSquare, overlayColor:UIColor.black.withAlphaComponent(0.6))
         self.view.addSubview(self.spinner)
-        
+        print(category_id)
         navigationController?.delegate = self
         
         self.navigationItem.backBarButtonItem?.tintColor = UIColor(rgb: 0xF9AF20)
@@ -43,12 +43,12 @@ class EventsView: UITableViewController, UINavigationControllerDelegate {
         cache.memoryStorage.config.expiration = .seconds(600)
         cache.memoryStorage.config.totalCostLimit = 1
         tableView.register(UINib(nibName: "EventCell", bundle: nil) , forCellReuseIdentifier: "eventCell")
-        JSONClass.getJSON(linkArray: ["/event/event/json?dateStart=\(NSDate().timeIntervalSince1970)"], completion: {jsonFile,alert in
+        JSONClass.getJSON(linkArray: ["/event/event/json?dateStart=\(NSDate().timeIntervalSince1970)&category_id=\(category_id)"], completion: {jsonFile,alert in
                 if jsonFile != [JSON]() {
                     
                     self.eventsJSON = jsonFile[0]
                     //print("teajhbkjbjbjjgcvblj;lbhvjgh\(self.eventsJSON)")
-                    self.deleteLateEvents()
+                   // self.deleteLateEvents()
                     self.tableView.reloadData()
                     self.spinner.dismiss()
                     print("done")
