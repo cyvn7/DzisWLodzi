@@ -350,7 +350,7 @@ class MapViewClass: UIViewController, CLLocationManagerDelegate, MKMapViewDelega
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         navigationController?.setNavigationBarHidden(false, animated: true)
         if segue.identifier == "goToCat" {
-            
+
             let fvc = segue.destination as! UINavigationController
             let destinationFVC = fvc.topViewController as! MapCategoryView
             //destinationFVC.modalPresentationStyle = .popover
@@ -367,7 +367,9 @@ class MapViewClass: UIViewController, CLLocationManagerDelegate, MKMapViewDelega
             }
             
         } else if segue.identifier == "toDetails" {
-            let fvc = segue.destination as! MapObjDesc
+            let nav = segue.destination as! UINavigationController
+            let fvc = nav.topViewController as! MapObjDesc
+            fvc.modalPresentationStyle = .pageSheet
             fvc.objectDetail = jsonDict[curID]!
             fvc.image = image
         }

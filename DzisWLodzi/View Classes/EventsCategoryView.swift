@@ -76,7 +76,8 @@ class EventsCategoryView: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let fvc = segue.destination as! EventsView
+        let rootFvc = segue.destination as! UINavigationController
+        let fvc = rootFvc.topViewController as! EventsView
         fvc.category_id = selectedID
         fvc.category_name = catDict[selectedID]!
         print("category name: \(catDict[selectedID]!)")

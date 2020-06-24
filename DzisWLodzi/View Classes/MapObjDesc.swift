@@ -29,6 +29,10 @@ class MapObjDesc: UIViewController {
     var pricesConstraint = NSLayoutConstraint()
     var descConstraint = NSLayoutConstraint()
     
+    @IBAction func backBtn(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

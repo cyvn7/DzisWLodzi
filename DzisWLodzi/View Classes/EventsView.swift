@@ -26,6 +26,10 @@ class EventsView: UITableViewController, UINavigationControllerDelegate {
     //UIColor(rgb: 0xF9AF20)
     //let defaults = NSU
     
+    @IBAction func backBtn(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
             
     override func viewDidAppear(_ animated: Bool) {
         //
