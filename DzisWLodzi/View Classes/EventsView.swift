@@ -55,7 +55,7 @@ class EventsView: UITableViewController, UINavigationControllerDelegate {
         cache.memoryStorage.config.totalCostLimit = 1
         tableView.register(UINib(nibName: "EventCell", bundle: nil) , forCellReuseIdentifier: "eventCell")
         //popraw dateStart=\(NSDate().timeIntervalSince1970)&
-        JSONClass.getJSON(linkArray: ["/event/event/json?dateStart=\(NSDate().timeIntervalSince1970)&category_id=\(category_id)"], completion: {jsonFile,alert in
+        JSONClass.getJSON(linkArray: ["/event/event/json?category_id=\(category_id)"], completion: {jsonFile,alert in
                 if jsonFile != [JSON]() {
                     
                     self.eventsJSON = jsonFile[0]
