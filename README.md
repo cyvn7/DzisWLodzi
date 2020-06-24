@@ -2,9 +2,9 @@
 
 ## Opis/Description
 ### [PL]
-Aplikacja pozwala na odkrycie Łodzi, i tego, co się w niej dzieje. Bazuje ona na stronie dziswlodzi.pl.<br>
+Aplikacja pozwala na odkrycie Łodzi, i tego, co się w niej dzieje. Bazuje ona na stronie dziswlodzi.pl. Uwaga: przez obecną pandemię COVID-19 nie ma żadnych aktualnych wydarzeń do wyświetlenia. Aby zobaczyć jak działa aplikacja, proszę zobaczyć odłam "covid19".
 ### [EN]
-App lets you discover Lodz city, and what happens here. It based on dziswlodzi.pl site.
+App lets you discover Lodz city, and what happens here. It based on dziswlodzi.pl site. Disclaimer: because of COVID-19 pandemy, there aren't any current events to display. To see how app works, please see "covid19" branch.
 
 ## Użyte technologie/Technologies
 ### [PL]
