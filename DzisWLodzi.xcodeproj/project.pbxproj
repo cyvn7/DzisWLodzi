@@ -18,6 +18,7 @@
 		877BA4D8236CBB7900725144 /* DzisWLodzi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 877BA4D6236CBB7900725144 /* DzisWLodzi.xcdatamodeld */; };
 		877BA4DA236CBB8300725144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 877BA4D9236CBB8300725144 /* Assets.xcassets */; };
 		877BA4DD236CBB8300725144 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877BA4DB236CBB8300725144 /* LaunchScreen.storyboard */; };
+		8788C17324A393CE00B42A43 /* EventDesc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8788C17224A393CE00B42A43 /* EventDesc.swift */; };
 		879E2D73247BDAB000106C2F /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 879E2D6F247BDAB000106C2F /* Raleway-SemiBold.ttf */; };
 		879E2D74247BDAB000106C2F /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 879E2D70247BDAB000106C2F /* Lato-Bold.ttf */; };
 		879E2D75247BDAB000106C2F /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 879E2D71247BDAB000106C2F /* Lato-Semibold.ttf */; };
@@ -45,6 +46,7 @@
 		877BA4D9236CBB8300725144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		877BA4DC236CBB8300725144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		877BA4DE236CBB8300725144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8788C17224A393CE00B42A43 /* EventDesc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDesc.swift; sourceTree = "<group>"; };
 		879E2D6F247BDAB000106C2F /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
 		879E2D70247BDAB000106C2F /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		879E2D71247BDAB000106C2F /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				875B3FD0247BE1040050C70E /* MapObjDesc.swift */,
 				87A0A93F23C39BA1000355A0 /* EventsCategoryView.swift */,
 				87A0A93323BEA3C3000355A0 /* EventsView.swift */,
+				8788C17224A393CE00B42A43 /* EventDesc.swift */,
 				87A0A93523BEA559000355A0 /* EventCellClass.swift */,
 				87A0A93723BEAF99000355A0 /* JSONClass.swift */,
 			);
@@ -307,6 +310,7 @@
 				877613DA23B7A972003FA847 /* MapCategoryView.swift in Sources */,
 				87A0A93423BEA3C3000355A0 /* EventsView.swift in Sources */,
 				87A0A94023C39BA1000355A0 /* EventsCategoryView.swift in Sources */,
+				8788C17324A393CE00B42A43 /* EventDesc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

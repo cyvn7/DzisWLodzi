@@ -13,6 +13,7 @@ import UIKit
 import MapKit
 import Alamofire
 import SwiftyJSON
+import Kingfisher
 
 class MapViewClass: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
@@ -108,17 +109,28 @@ class MapViewClass: UIViewController, CLLocationManagerDelegate, MKMapViewDelega
         print(jsonDict[identifier!]!.categoryIds)
         detailTitle.text! = jsonDict[identifier!]!.title
         print(jsonDict[identifier!]!.imageLink)
-        AF.download("\(jsonDict[identifier!]!.imageLink.replacingOccurrences(of: "http", with: "https"))").responseData {
-          response in
-              if let data = response.value {
-                self.image = UIImage(data: data)
-                //self.detailBkg.image = image
-                UIView.transition(with: self.detailBkg,
-                duration: 0.75,
-                options: .transitionCrossDissolve,
-                animations: { self.detailBkg.image = self.image },
-                completion: nil)
-               }
+        let url = URL(string: "\(jsonDict[identifier!]!.imageLink.replacingOccurrences(of: "http", with: "https"))")
+        let processor = DownsamplingImageProcessor(size: detailBkg.frame.size)
+        detailBkg.kf.indicatorType = .activity
+        detailBkg.kf.setImage(
+            with: url,
+            placeholder: UIImage(color: UIColor(rgb: 0xF9AF20)),
+            options: [
+                .processor(processor),
+                .scaleFactor(UIScreen.main.scale),
+                .transition(.fade(1)),
+                .cacheOriginalImage
+            ])
+        {
+            result in
+            switch result {
+            case .success(let value):
+                self.image = value.image
+                print("Task done for: \(value.source.url?.absoluteString ?? "")")
+                
+            case .failure(let error):
+                print("Job failed: \(error.localizedDescription)")
+            }
         }
         let size = CGSize(width: 75, height: 75)
         UIGraphicsBeginImageContext(size)

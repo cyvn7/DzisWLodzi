@@ -548,7 +548,7 @@
         <!--PinDesc-->
         <scene sceneID="iJ5-KZ-Uli">
             <objects>
-                <viewController title="PinDesc" id="pD4-XL-p28" customClass="MapObjDesc" customModule="Dziś_w_Łodzi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PinDesc" id="pD4-XL-p28" customClass="EventDesc" customModule="Dziś_w_Łodzi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gyk-Tr-fpl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -557,7 +557,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdU-u6-I21" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="459"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="403"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POe-4K-6f5">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="296"/>
@@ -569,7 +569,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="296"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAv-yG-PSj">
-                                                        <rect key="frame" x="8" y="241" width="75.666666666666671" height="45"/>
+                                                        <rect key="frame" x="8" y="243" width="398" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="Phy-cq-rP4"/>
                                                         </constraints>
@@ -577,19 +577,32 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqc-XE-LYD">
+                                                        <rect key="frame" x="8" y="219" width="398" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="U7r-Z6-a5e"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.97647058819999999" green="0.68627450980000004" blue="0.12549019610000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="Pc4-mM-0W8" firstAttribute="leading" secondItem="POe-4K-6f5" secondAttribute="leading" id="AAr-k9-BTl"/>
-                                                    <constraint firstAttribute="bottom" secondItem="IAv-yG-PSj" secondAttribute="bottom" constant="10" id="AOf-Yp-ma2"/>
+                                                    <constraint firstItem="Qqc-XE-LYD" firstAttribute="leading" secondItem="POe-4K-6f5" secondAttribute="leading" constant="8" id="AdU-MZ-FZ1"/>
                                                     <constraint firstItem="O35-sa-XWC" firstAttribute="top" secondItem="POe-4K-6f5" secondAttribute="top" id="DWx-A4-qbB"/>
-                                                    <constraint firstItem="IAv-yG-PSj" firstAttribute="leading" secondItem="POe-4K-6f5" secondAttribute="leading" constant="8" id="DeH-hj-tVB"/>
+                                                    <constraint firstItem="IAv-yG-PSj" firstAttribute="leading" secondItem="POe-4K-6f5" secondAttribute="leading" constant="8" id="IG4-K8-XgO"/>
                                                     <constraint firstItem="Pc4-mM-0W8" firstAttribute="top" secondItem="POe-4K-6f5" secondAttribute="top" id="M6e-Ki-VMD"/>
+                                                    <constraint firstItem="IAv-yG-PSj" firstAttribute="top" secondItem="Qqc-XE-LYD" secondAttribute="bottom" id="M9R-85-Kv6"/>
                                                     <constraint firstItem="O35-sa-XWC" firstAttribute="leading" secondItem="POe-4K-6f5" secondAttribute="leading" id="MfF-Mc-OR6"/>
                                                     <constraint firstAttribute="trailing" secondItem="Pc4-mM-0W8" secondAttribute="trailing" id="OLd-pf-xfw"/>
                                                     <constraint firstAttribute="bottom" secondItem="O35-sa-XWC" secondAttribute="bottom" id="OWH-Ue-tWO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="IAv-yG-PSj" secondAttribute="bottom" constant="8" id="f5x-h1-TEn"/>
                                                     <constraint firstAttribute="trailing" secondItem="O35-sa-XWC" secondAttribute="trailing" id="jd0-Gv-DOe"/>
                                                     <constraint firstAttribute="height" constant="296" id="lYt-s7-hCE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IAv-yG-PSj" secondAttribute="trailing" constant="8" id="qsu-pg-feP"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Qqc-XE-LYD" secondAttribute="trailing" constant="8" id="vHe-vj-9UB"/>
                                                     <constraint firstAttribute="bottom" secondItem="Pc4-mM-0W8" secondAttribute="bottom" id="xO7-vI-4CC"/>
                                                 </constraints>
                                             </view>
@@ -603,34 +616,12 @@
                                                 <state key="normal" title="kup bilet">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0P-IP-rp4">
-                                                <rect key="frame" x="8" y="431" width="398" height="20"/>
-                                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boA-gA-ZSV">
-                                                <rect key="frame" x="358" y="375" width="48" height="48"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="48" id="aPo-OY-nFe"/>
-                                                    <constraint firstAttribute="height" constant="48" id="cWm-m1-DIE"/>
-                                                </constraints>
-                                                <state key="normal" image="location.circle.fill" catalog="system">
-                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="42"/>
-                                                </state>
                                                 <connections>
-                                                    <action selector="routeBtnAction:" destination="pD4-XL-p28" eventType="touchUpInside" id="2Nf-mk-Ak5"/>
+                                                    <action selector="websiteBtnAction:" destination="pD4-XL-p28" eventType="touchUpInside" id="pd3-No-b6a"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="adres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szl-JV-OTB">
-                                                <rect key="frame" x="8" y="375" width="342" height="20"/>
-                                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="adres" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIh-rg-fGZ">
-                                                <rect key="frame" x="8" y="399" width="342" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0P-IP-rp4">
+                                                <rect key="frame" x="8" y="375" width="398" height="20"/>
                                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -638,24 +629,19 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="Szl-JV-OTB" firstAttribute="leading" secondItem="AdU-u6-I21" secondAttribute="leading" constant="8" id="2Ni-YS-cIY"/>
-                                            <constraint firstItem="qIh-rg-fGZ" firstAttribute="top" secondItem="Szl-JV-OTB" secondAttribute="bottom" constant="4" id="2qM-fS-5aS"/>
-                                            <constraint firstItem="qIh-rg-fGZ" firstAttribute="leading" secondItem="AdU-u6-I21" secondAttribute="leading" constant="8" id="985-nK-dRr"/>
-                                            <constraint firstItem="boA-gA-ZSV" firstAttribute="top" secondItem="qSG-9p-BtI" secondAttribute="bottom" constant="8" id="NeG-2j-TlM"/>
+                                            <constraint firstItem="h0P-IP-rp4" firstAttribute="top" secondItem="qSG-9p-BtI" secondAttribute="bottom" constant="8" id="Dh4-bt-bg7"/>
                                             <constraint firstItem="POe-4K-6f5" firstAttribute="leading" secondItem="AdU-u6-I21" secondAttribute="leading" id="SUK-u0-fWt"/>
                                             <constraint firstItem="qSG-9p-BtI" firstAttribute="leading" secondItem="AdU-u6-I21" secondAttribute="leading" constant="8" id="TWB-kf-5Bq"/>
                                             <constraint firstAttribute="bottom" secondItem="h0P-IP-rp4" secondAttribute="bottom" constant="8" id="W2j-l9-c00"/>
                                             <constraint firstItem="h0P-IP-rp4" firstAttribute="leading" secondItem="AdU-u6-I21" secondAttribute="leading" constant="8" id="YWM-q5-aL8"/>
                                             <constraint firstAttribute="trailing" secondItem="qSG-9p-BtI" secondAttribute="trailing" constant="8" id="aJi-Tc-n3d"/>
                                             <constraint firstAttribute="trailing" secondItem="POe-4K-6f5" secondAttribute="trailing" id="adn-zH-auG"/>
-                                            <constraint firstItem="Szl-JV-OTB" firstAttribute="top" secondItem="qSG-9p-BtI" secondAttribute="bottom" constant="8" id="b2z-Tq-u8G"/>
+                                            <constraint firstAttribute="trailing" secondItem="h0P-IP-rp4" secondAttribute="trailing" constant="8" id="ctr-Xk-am0"/>
                                             <constraint firstAttribute="trailing" secondItem="h0P-IP-rp4" secondAttribute="trailing" constant="8" id="fb6-ju-fjh"/>
                                             <constraint firstItem="qSG-9p-BtI" firstAttribute="top" secondItem="POe-4K-6f5" secondAttribute="bottom" constant="8" id="gXb-l6-BHK"/>
-                                            <constraint firstItem="boA-gA-ZSV" firstAttribute="leading" secondItem="qIh-rg-fGZ" secondAttribute="trailing" constant="8" id="lRc-hT-TKc"/>
                                             <constraint firstItem="POe-4K-6f5" firstAttribute="top" secondItem="AdU-u6-I21" secondAttribute="top" id="oWc-a4-4W3"/>
-                                            <constraint firstItem="boA-gA-ZSV" firstAttribute="leading" secondItem="Szl-JV-OTB" secondAttribute="trailing" constant="8" id="rxa-Rg-xMR"/>
-                                            <constraint firstAttribute="trailing" secondItem="boA-gA-ZSV" secondAttribute="trailing" constant="8" id="t5S-vh-Yi2"/>
-                                            <constraint firstItem="h0P-IP-rp4" firstAttribute="top" secondItem="boA-gA-ZSV" secondAttribute="bottom" constant="8" id="w8O-9J-PU4"/>
+                                            <constraint firstAttribute="bottom" secondItem="h0P-IP-rp4" secondAttribute="bottom" constant="8" id="qDd-Br-en3"/>
+                                            <constraint firstItem="h0P-IP-rp4" firstAttribute="leading" secondItem="AdU-u6-I21" secondAttribute="leading" constant="8" id="vGl-mR-RVL"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -687,9 +673,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="addressLabel" destination="qIh-rg-fGZ" id="VbU-vp-7JF"/>
-                        <outlet property="imageView" destination="Pc4-mM-0W8" id="xuW-bi-0Lt"/>
-                        <outlet property="titleLabel" destination="IAv-yG-PSj" id="Pn6-Yt-Gc3"/>
+                        <outlet property="dateLabel" destination="Qqc-XE-LYD" id="WPf-AY-au5"/>
+                        <outlet property="descLabel" destination="h0P-IP-rp4" id="b8V-I1-bPv"/>
+                        <outlet property="imageView" destination="Pc4-mM-0W8" id="abB-Se-et3"/>
+                        <outlet property="titleLabel" destination="IAv-yG-PSj" id="8C3-VV-uuB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lp7-ye-Moy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

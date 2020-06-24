@@ -68,7 +68,7 @@ class MapObjDesc: UIViewController {
         
         if objectDetail.desc.contains("<p>") == true {
             descLabel.text = "\(objectDetail.desc.html2String)"
-        } else if objectDetail.prices == String() {
+        } else if objectDetail.desc == String() {
             descLabel.text = ""
         } else {
             descLabel.text = "\(objectDetail.desc)"
