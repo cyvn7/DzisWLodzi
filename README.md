@@ -24,5 +24,4 @@ App uses Apple Maps and CocoaPods, thanks to which following plugins are used:
 * Alamofire - downloading other files such as JSONs
 * JHSpinner - loading animation
 * SwiftyJSON - using JSON in code
-
-The last add-on is especially important, since most of data is downloaded from different JSON on site servers.
+![dwl](https://github.com/cyvn7/DzisWLodzi/assets/42326412/68479e0c-e08d-4fa2-9051-3f58fb4a0045)
